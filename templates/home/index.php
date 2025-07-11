@@ -36,8 +36,8 @@
             </div>
             
             <div class="text-center text-sm text-gray-500">
-                <p>✅ Base de données connectée</p>
-                <p>🚀 Application opérationnelle</p>
+                <!-- <p>✅ Base de données connectée</p>
+                <p>🚀 Application opérationnelle</p> -->
             </div>
         </div>
     </div>

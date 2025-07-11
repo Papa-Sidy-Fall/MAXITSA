@@ -1,21 +1,20 @@
 <?php
 
-use App\core\Router;
-use App\src\controller\AuthController;
-use App\src\controller\AccountController;
+use App\Core\Router;
+use App\Controller\AuthController;
+use App\Controller\DashboardController;
 
 $router = new Router();
 
 // Routes publiques
-$router->get('/register', [AuthController::class, 'register']);
+$router->get('/', [AuthController::class, 'showLogin']);
+$router->get('/register', [AuthController::class, 'showRegister']);
 $router->post('/register', [AuthController::class, 'register']);
-$router->get('/login', [AuthController::class, 'login']);
+$router->get('/login', [AuthController::class, 'showLogin']);
 $router->post('/login', [AuthController::class, 'login']);
 
 // Routes protégées
-$router->get('/account', [AccountController::class, 'index'], ['auth']);
-$router->get('/create-account', [AccountController::class, 'create'], ['auth']);
-$router->post('/create-account', [AccountController::class, 'create'], ['auth']);
+$router->get('/dashboard', [DashboardController::class, 'index'], ['auth']);
 $router->get('/logout', [AuthController::class, 'logout'], ['auth']);
 
 return $router;
