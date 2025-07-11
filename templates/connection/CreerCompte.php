@@ -76,7 +76,7 @@
                     <label class="block text-gray-700 font-semibold mb-1 text-xs lg:text-sm">
                         CNI <span class="text-red-500">*</span>
                     </label>
-                    <input type="text" class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                    <input type="text" class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Numéro Tel -->
@@ -84,7 +84,7 @@
                     <label class="block text-gray-700 font-semibold mb-1 text-xs lg:text-sm">
                         Numéro Tel <span class="text-red-500">*</span>
                     </label>
-                    <input type="tel" class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                    <input type="tel" class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Mot de passe -->
@@ -92,7 +92,7 @@
                     <label class="block text-gray-700 font-semibold mb-1 text-xs lg:text-sm">
                         Mot de passe <span class="text-red-500">*</span>
                     </label>
-                    <input type="password" class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                    <input type="password" class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Section Upload Photos -->

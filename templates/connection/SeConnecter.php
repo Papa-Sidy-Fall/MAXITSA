@@ -34,7 +34,7 @@
                     <label class="block text-gray-700 font-semibold mb-2 text-sm lg:text-base">
                         Num Tel <span class="text-red-500">*</span>
                     </label>
-                    <input type="tel" class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base" required>
+                    <input type="tel" class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base">
                 </div>
 
                 <!-- Mot de passe -->
@@ -42,7 +42,7 @@
                     <label class="block text-gray-700 font-semibold mb-2 text-sm lg:text-base">
                         Mot de passe <span class="text-red-500">*</span>
                     </label>
-                    <input type="password" class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base" required>
+                    <input type="password" class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base">
                 </div>
 
                 <!-- Bouton Se connecter -->

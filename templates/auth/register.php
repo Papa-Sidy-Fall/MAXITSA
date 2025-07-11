@@ -64,7 +64,7 @@
                         Prénom <span class="text-red-500">*</span>
                     </label>
                     <input type="text" name="prenom" value="<?= htmlspecialchars($old['prenom'] ?? '') ?>" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Nom -->
@@ -73,7 +73,7 @@
                         Nom <span class="text-red-500">*</span>
                     </label>
                     <input type="text" name="nom" value="<?= htmlspecialchars($old['nom'] ?? '') ?>" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- CNI -->
@@ -82,7 +82,7 @@
                         CNI <span class="text-red-500">*</span>
                     </label>
                     <input type="text" name="cni" value="<?= htmlspecialchars($old['cni'] ?? '') ?>" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Email -->
@@ -91,7 +91,7 @@
                         Email <span class="text-red-500">*</span>
                     </label>
                     <input type="email" name="email" value="<?= htmlspecialchars($old['email'] ?? '') ?>" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Numéro Tel -->
@@ -100,7 +100,7 @@
                         Numéro Tel <span class="text-red-500">*</span>
                     </label>
                     <input type="tel" name="telephone" value="<?= htmlspecialchars($old['telephone'] ?? '') ?>" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Mot de passe -->
@@ -109,7 +109,7 @@
                         Mot de passe <span class="text-red-500">*</span>
                     </label>
                     <input type="password" name="password" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Confirmer mot de passe -->
@@ -118,7 +118,7 @@
                         Confirmer mot de passe <span class="text-red-500">*</span>
                     </label>
                     <input type="password" name="confirm_password" 
-                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm" required>
+                           class="w-full px-2 py-1.5 lg:px-3 lg:py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-200 text-xs lg:text-sm">
                 </div>
 
                 <!-- Section Upload Photos -->

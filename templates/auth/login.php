@@ -55,8 +55,7 @@
                            name="login" 
                            value="<?= htmlspecialchars($old['login'] ?? '') ?>" 
                            placeholder="Ex: 771234567"
-                           class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base transition-colors" 
-                           required>
+                           class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base transition-colors">
                 </div>
 
                 <!-- Mot de passe -->
@@ -67,8 +66,7 @@
                     <input type="password" 
                            name="password" 
                            placeholder="Votre mot de passe"
-                           class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base transition-colors" 
-                           required>
+                           class="w-full px-4 py-3 lg:px-5 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-200 text-sm lg:text-base transition-colors">
                 </div>
 
                 <!-- Bouton Se connecter -->
