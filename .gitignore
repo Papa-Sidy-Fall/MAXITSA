@@ -1,0 +1,56 @@
+# Fichiers de configuration sensibles
+.env
+.env.local
+.env.production
+.env.dev
+.env.test
+
+# Logs
+*.log
+logs/
+error.log
+access.log
+
+# Cache et temporaires
+cache/
+tmp/
+temp/
+storage/
+
+# Uploads utilisateurs
+public/uploads/*
+!public/uploads/.gitkeep
+uploads/
+
+# Dépendances
+vendor/
+node_modules/
+composer.lock
+package-lock.json
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Fichiers système
+*.pid
+*.seed
+*.pid.lock
+
+# Base de données locale
+*.sqlite
+*.db
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*.old
+
+# Configuration locale PHP
+php.ini
+.htaccess.local
