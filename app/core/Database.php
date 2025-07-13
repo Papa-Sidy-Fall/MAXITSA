@@ -2,10 +2,11 @@
 
 namespace App\Core;
 
+use App\Core\Interfaces\DatabaseConnectionInterface;
 use PDO;
 use PDOException;
 
-class Database
+class Database implements DatabaseConnectionInterface
 {
     private static $instance = null;
     private $connection;
@@ -67,5 +68,66 @@ class Database
         } catch (PDOException $e) {
             return false;
         }
+    }
+
+    public function beginTransaction(): bool
+    {
+        return $this->connection->beginTransaction();
+    }
+
+    public function commit(): bool
+    {
+        return $this->connection->commit();
+    }
+
+    public function rollback(): bool
+    {
+        return $this->connection->rollback();
+    }
+
+    public function inTransaction(): bool
+    {
+        return $this->connection->inTransaction();
+    }
+
+    public function execute(string $query, array $params = []): bool
+    {
+        try {
+            $stmt = $this->connection->prepare($query);
+            return $stmt->execute($params);
+        } catch (PDOException $e) {
+            error_log("Erreur SQL: " . $e->getMessage());
+            return false;
+        }
+    }
+
+    public function fetch(string $query, array $params = []): ?array
+    {
+        try {
+            $stmt = $this->connection->prepare($query);
+            $stmt->execute($params);
+            $result = $stmt->fetch();
+            return $result === false ? null : $result;
+        } catch (PDOException $e) {
+            error_log("Erreur SQL: " . $e->getMessage());
+            return null;
+        }
+    }
+
+    public function fetchAll(string $query, array $params = []): array
+    {
+        try {
+            $stmt = $this->connection->prepare($query);
+            $stmt->execute($params);
+            return $stmt->fetchAll();
+        } catch (PDOException $e) {
+            error_log("Erreur SQL: " . $e->getMessage());
+            return [];
+        }
+    }
+
+    public function lastInsertId(): string
+    {
+        return $this->connection->lastInsertId();
     }
 }

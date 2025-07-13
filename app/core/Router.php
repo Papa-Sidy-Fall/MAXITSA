@@ -27,11 +27,23 @@ class Router
         $this->get('/historique', 'TransactionController@showHistorique');
         $this->get('/logout', 'AuthController@logout');
         
+        // Routes des comptes (US2, US5, US7)
+        $this->get('/comptes', 'CompteController@index');
+        $this->get('/comptes/create', 'CompteController@create');
+        
+        // Routes Service Commercial (US6)
+        $this->get('/commercial', 'CommercialController@index');
+        
         // Routes POST
         $this->post('/login', 'AuthController@login');
         $this->post('/register', 'AuthController@register');
         $this->post('/transfert', 'TransactionController@effectuerTransfert');
         $this->post('/depot', 'TransactionController@effectuerDepot');
+        
+        // Routes POST des comptes
+        $this->post('/comptes/store', 'CompteController@store');
+        $this->post('/comptes/make-principal', 'CompteController@makePrincipal');
+        $this->post('/commercial/search', 'CommercialController@search');
     }
     
     public function get(string $path, string $action): void

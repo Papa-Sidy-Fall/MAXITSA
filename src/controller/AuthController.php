@@ -2,24 +2,29 @@
 
 namespace App\Controller;
 
+use App\Core\AbstractController;
 use App\Core\Database;
+use App\Core\Session;
+use App\Core\Validator;
 use App\Service\AuthService;
 use App\Repository\ClientRepository;
 use App\Repository\CompteRepository;
 
-class AuthController
+class AuthController extends AbstractController
 {
     private AuthService $authService;
 
     public function __construct()
     {
+        parent::__construct();
+        
         $database = Database::getInstance();
-        $pdo = $database->getConnection();
         
-        $clientRepo = new ClientRepository($pdo);
-        $compteRepo = new CompteRepository($pdo);
+        $clientRepo = new ClientRepository($database);
+        $compteRepo = new CompteRepository($database);
+        $validator = new Validator();
         
-        $this->authService = new AuthService($clientRepo, $compteRepo);
+        $this->authService = new AuthService($clientRepo, $compteRepo, $validator);
     }
 
     public function showLogin(): void

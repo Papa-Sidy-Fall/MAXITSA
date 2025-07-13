@@ -88,14 +88,26 @@
                 </div>
             </a>
             
-            <a href="/historique" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-200">
+            <a href="/comptes" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-200">
                 <div class="flex items-center">
-                    <div class="bg-purple-100 p-3 rounded-lg">
-                        <i class="fas fa-history text-purple-600 text-xl"></i>
+                    <div class="bg-orange-100 p-3 rounded-lg">
+                        <i class="fas fa-credit-card text-orange-600 text-xl"></i>
                     </div>
                     <div class="ml-4">
-                        <h3 class="font-semibold text-gray-900">Historique</h3>
-                        <p class="text-gray-600 text-sm">Voir toutes les transactions</p>
+                        <h3 class="font-semibold text-gray-900">Mes Comptes</h3>
+                        <p class="text-gray-600 text-sm">Gérer vos comptes</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/commercial" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-200">
+                <div class="flex items-center">
+                    <div class="bg-blue-100 p-3 rounded-lg">
+                        <i class="fas fa-search text-blue-600 text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="font-semibold text-gray-900">Service Commercial</h3>
+                        <p class="text-gray-600 text-sm">Rechercher un compte client</p>
                     </div>
                 </div>
             </a>

@@ -2,18 +2,19 @@
 
 namespace App\Controller;
 
+use App\Core\AbstractController;
 use App\Repository\TransactionRepository;
 use App\Core\Database;
 
-class DashboardController
+class DashboardController extends AbstractController
 {
     private TransactionRepository $transactionRepo;
 
     public function __construct()
     {
+        parent::__construct();
         $database = Database::getInstance();
-        $pdo = $database->getConnection();
-        $this->transactionRepo = new TransactionRepository($pdo);
+        $this->transactionRepo = new TransactionRepository($database);
     }
 
     public function index(): void
